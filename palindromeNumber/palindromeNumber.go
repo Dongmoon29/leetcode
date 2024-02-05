@@ -30,11 +30,9 @@ func isPalindrome2(x int) bool {
 	for x > 0 {
 		firstDigit := x / divisor
 		lastDigit := x % 10
-
 		if firstDigit != lastDigit {
 			return false
 		}
-
 		x = (x % divisor) / 10
 		divisor /= 100
 	}
